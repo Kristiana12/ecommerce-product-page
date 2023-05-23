@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 import {
   ProductDescription,
   Carousel,
   Button,
   iconPlus,
   iconMinus,
+main
+  iconCartWhite,
+
   iconCart,
   ProductGallery,
   imageOne,
@@ -17,6 +20,7 @@ import {
   imageFourThumb,
 } from '../../ExportComponents';
 import './ProductOverview.scss';
+main
 
 const ProductOverview = () => {
   const images = [
@@ -33,6 +37,7 @@ const ProductOverview = () => {
   function addToCart() {}
 
   return (
+main
     <main className="product-overview">
       <Carousel images={images} />
       <ProductGallery images={images} />
@@ -57,12 +62,13 @@ const ProductOverview = () => {
           <div className="cart-button">
             <Button
               onClick={addToCart}
-              src={iconCart}
+              src={iconCartWhite}
               title="Cart icon"
               ariaLabel={'add to cart'}
             ></Button>
             <span>Add to Cart</span>
           </div>
+main
         </div>
       </div>
     </main>
